@@ -27,10 +27,13 @@ pipeline {
         }
       }
     }
-    stage('Send Notifcation') {
-          steps {
-            emailext(subject: 'TestNG MultiBranch ', body: 'Build Success', from: 'jenkins21291@gmail.com', replyTo: 'jenkins21291@gmail.com', to: 'jenkins21291@gmail.com')
-          }
-    }
+    post{
+            success{
+            emailext(subject: 'Pet Store EdwardJones', body: 'Build Success', from: 'jenkins21291@gmail.com', replyTo: 'jenkins21291@gmail.com', to: 'jenkins21291@gmail.com')
+            }
+            failure{
+            emailext(subject: 'Pet Store EdwardJones', body: 'Build Failure', from: 'jenkins21291@gmail.com', replyTo: 'jenkins21291@gmail.com', to: 'jenkins21291@gmail.com')
+            }
+        }
   }
 }

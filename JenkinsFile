@@ -1,9 +1,30 @@
 pipeline {
   agent any
   stages {
-    stage('Git Checkout') {
+    stage('checkout') {
       steps {
         git([url: 'https://github.com/frusteee/edjoAPI.git', branch: 'master', credentialsId: '7050e0cd-7029-485c-b583-ffa088320d9e'])
+      }
+    }
+    stage('Set Maven Env') {
+      steps {
+        echo 'Setiing up Maven'
+        script {
+          env.PATH = 'C:/apache-maven-3.8.5/bin;c:\\Windows\\System32'
+        }
+      }
+    }
+    stage('Run Tests') {
+      steps {
+        bat 'mvn test'
+      }
+    }
+    stage('Archive SureFire Reports') {
+      steps {
+        echo 'Archiving SureFire Reports'
+        script {
+          archiveArtifacts 'target/surefire-reports'
+        }
       }
     }
   }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-26T17:16:59 IST" name="Surefire suite" finished-at="2024-05-26T17:17:13 IST" duration-ms="14395">
+    <groups>
+    </groups>
+    <test started-at="2024-05-26T17:16:59 IST" name="Surefire test" finished-at="2024-05-26T17:17:13 IST" duration-ms="14395">
+      <class name="com.epam.certs.tests.clientCertsTests">
+        <test-method signature="test_http_with_client_certs()" started-at="2024-05-26T17:16:59 IST" name="test_http_with_client_certs" finished-at="2024-05-26T17:17:01 IST" duration-ms="2491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_http_with_client_certs -->
+      </class> <!-- com.epam.certs.tests.clientCertsTests -->
+      <class name="com.epam.pet.tests.petTests">
+        <test-method signature="test_UploadPhoto()" started-at="2024-05-26T17:17:03 IST" name="test_UploadPhoto" finished-at="2024-05-26T17:17:04 IST" duration-ms="1556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_UploadPhoto -->
+        <test-method signature="test_FindByStatus() throws com.fasterxml.jackson.core.JsonProcessingException" started-at="2024-05-26T17:17:03 IST" name="test_FindByStatus" finished-at="2024-05-26T17:17:13 IST" duration-ms="10285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_FindByStatus -->
+        <test-method signature="test_Serialization_Deserialization() throws java.io.IOException" started-at="2024-05-26T17:17:03 IST" name="test_Serialization_Deserialization" finished-at="2024-05-26T17:17:06 IST" duration-ms="2807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Serialization_Deserialization -->
+        <test-method signature="test_Chaining()" started-at="2024-05-26T17:17:03 IST" name="test_Chaining" finished-at="2024-05-26T17:17:12 IST" duration-ms="8749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Chaining -->
+        <test-method signature="test_Complex_POJO() throws com.fasterxml.jackson.core.JsonProcessingException" started-at="2024-05-26T17:17:03 IST" name="test_Complex_POJO" finished-at="2024-05-26T17:17:04 IST" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Complex_POJO -->
+      </class> <!-- com.epam.pet.tests.petTests -->
+      <class name="com.epam.pet.tests.petSchemaTests">
+        <test-method signature="testJsonSchemaData()" started-at="2024-05-26T17:17:01 IST" name="testJsonSchemaData" finished-at="2024-05-26T17:17:03 IST" duration-ms="1604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJsonSchemaData -->
+      </class> <!-- com.epam.pet.tests.petSchemaTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

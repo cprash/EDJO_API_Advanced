@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "id",
+    "category",
+    "name",
+    "photoUrls",
+    "tags",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "default": 0,
+      "title": "The id Schema",
+      "examples": [
+        9223372036854070354
+      ]
+    },
+    "category": {
+      "type": "object",
+      "default": {},
+      "title": "The category Schema",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "default": 0,
+          "title": "The id Schema",
+          "examples": [
+            0
+          ]
+        },
+        "name": {
+          "type": "string",
+          "default": "",
+          "title": "The name Schema",
+          "examples": [
+            "string"
+          ]
+        }
+      },
+      "examples": [{
+        "id": 0,
+        "name": "string"
+      }]
+    },
+    "name": {
+      "type": "string",
+      "default": "",
+      "title": "The name Schema",
+      "examples": [
+        "doggie-epam"
+      ]
+    },
+    "photoUrls": {
+      "type": "array",
+      "default": [],
+      "title": "The photoUrls Schema",
+      "items": {},
+      "examples": [
+        []
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "default": [],
+      "title": "The tags Schema",
+      "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+              0
+            ]
+          },
+          "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+              "string"
+            ]
+          }
+        },
+        "examples": [{
+          "id": 0,
+          "name": "string"
+        }]
+      },
+      "examples": [
+        [{
+          "id": 0,
+          "name": "string"
+        }]
+      ]
+    },
+    "status": {
+      "type": "string",
+      "default": "",
+      "title": "The status Schema",
+      "examples": [
+        "available"
+      ]
+    }
+  },
+  "examples": [{
+    "id": 9223372036854070354,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "doggie-epam",
+    "photoUrls": [],
+    "tags": [{
+      "id": 0,
+      "name": "string"
+    }],
+    "status": "available"
+  }]
+}

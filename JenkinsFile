@@ -23,7 +23,7 @@ pipeline {
       steps {
         echo 'Archiving SureFire Reports'
         script {
-          archiveArtifacts 'target/*.html'
+          archiveArtifacts 'target/surefire-reports/testng-junit-results/index.html'
         }
       }
     }

@@ -23,9 +23,14 @@ pipeline {
       steps {
         echo 'Archiving SureFire Reports'
         script {
-          archiveArtifacts 'target/surefire-reports'
+          archiveArtifacts 'target/*.html'
         }
       }
+    }
+    stage('Send Notifcation') {
+          steps {
+            emailext(subject: 'TestNG MultiBranch ', body: 'Build Success', from: 'jenkins21291@gmail.com', replyTo: 'jenkins21291@gmail.com', to: 'jenkins21291@gmail.com')
+          }
     }
   }
 }

@@ -26,13 +26,6 @@ pipeline {
           }
         }
       }
-      post {
-        success {
-          script {
-            emailext body: 'Build Successful', subject: 'petStore_edjoAPI', to: 'jenkins21291@gmail.com'
-          }
-        }
-      }
-
+      
     }
   }
